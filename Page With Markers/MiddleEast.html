@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<script type="text/javascript" src="js/KBmapmarkers.js"></script>
+		<script type="text/javascript" src="js/KBmapmarkersCords.js"></script>
+
+		<link href="css/KBmapmarkers.css" rel="stylesheet">
+		<style>
+
+			@font-face {
+			  font-family: 'witcher';
+			  src: url('thewitcher-4.ttf')  format('truetype')
+			}
+
+			.KBmap__markerTitle{
+				font-family: witcher;
+				color: #56270c;
+			}
+
+
+
+/*.header {
+	  padding: 10px 16px;
+	  background: #003366;
+	  color: #f1f1f1;
+	  opacity: 0.9;
+}
+
+		.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}*/
+header.fixed{
+	position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  background: orange;
+  text-align: center;
+	opacity: 0.9;
+color: #f1f1f1;
+	width: 100%;
+	font-size: 40px;
+}
+
+
+	img.a {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+    width: 700px;
+    height: auto;
+}
+
+
+  img.a :hover
+    {
+      -moz-box-shadow: 0 0 30px #000000;
+      -webkit-box-shadow: 0 0 30px #000000;
+      box-shadow: 0 0 30px #000000;
+    }
+
+		.footer {
+			background-color: #003366;
+			height: 40px;
+			color: #ffffff;
+			text-align: center;
+			padding: 3px;
+		}
+
+		.box {
+		  width: 670px;
+		  padding: 10px;
+		  border: 5px solid gray;
+		  margin: 0 auto;
+		}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #003366;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+		</style>
+	</head>
+	<body>
+		<header class="fixed">Middle East</header>
+		<!--<section>
+		<div class="header" id="myHeader">
+				<h2>Middle East</h2>
+			</div>
+
+		</section>-->
+<br><br><br><br>
+		<section class="KBmap" id="KBtestmap">
+
+		</section>
+	<section>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+		<p><a href="FestivalsHP.html">Go home</a></p>
+  <!--Saudi Arabia-->
+  <h1 id="UKDay">Unification of the Kingdom Day</h1>
+  <p>23 September</p>
+	<img class="a" src="images/national-day-saudi-arabia.jpg" alt="Unification of the Kingdom Day-Saudi Arabia" />
+<div class="box">
+  <p>This is the country’s only public secular holiday and it takes place on the
+    anniversary of the day Saudi Arabia was founded in the year 1932. There have been
+    a growing number of young Saudis who choose to express their national pride more overtly
+    through singing and dancing in public and by honking their car horns and driving around while waving Saudi flags.
+    </p>
+</div>
+
+
+    <h1 id="MiladAlNabi">Milad Al-Nabi</h1>
+    <p>9-10 November</p>
+		<img class="a" src="images/milad-al-nabi.jpg" alt="Milad Al-Nabi-Saudi Arabia" >
+<div class="box">
+    <p>This festival is celebrated on the occasion of the birthday of the Prophet Mohammad.
+      Children are encouraged to recite poems about the Prophet and older generations tell stories about Mohammad’s life and his achievements. Additional traditional activities include large feasts and street processions.
+      The date of the festival varies from year to year due to its accordance with the Islamic (lunar) calendar.
+</p>
+</div>
+<!--Israel-->
+<h1 id="IsraelFestival">The Israel Festival</h1>
+<p>29 May to 15 June</p>
+<img class="a" src="images/celebrate-israel-day-parade.jpg" alt="The Israel Festival-Israel" >
+<div class="box">
+<p>This festival was first introduced to the international audience in the year 1961.
+  Since then, each year the grounds display various forms of art. The performances range
+  from stage art, theatre, classical music, and contemporary dance. The festival spans over a few days, taking place during the spring season.
+  </p>
+</div>
+  <h1 id="SukkotFestival">Sukkot Festival</h1>
+  <p>13 October to 20 October</p>
+	<img class="a" src="images/Sukkot.jpg" alt="Sukkot Festival-Israel" >
+<div class="box">
+  <p>It is usually held in the month of September and is known as the Feast of Tabernacles. It is based on an event from the Bible and a part of the three festivals where the people are commanded to visit the pilgrimage sites.
+    It is a week-long festival, starting with Shabbat.
+    </p>
+</div>
+    <!--Iran-->
+
+    <h1 id="CSouri">Chahrshanbe Souri - Festival of fire</h1>
+    <p>March 13 to March 20</p>
+		<img class="a" src="images/fire-festival.jpg" alt="Fire Festival-Iran" >
+<div class="box">
+    <p>The term Chaharshanbe Suri is made of two words meaning Wednesday and celebrations/red respectively, where young and old gather around and jump over fires that stay burning all night.
+      These bonfires symbolize kindness, friendship, and light.
+		</p>
+
+		</div>
+		<br /><br />
+</section>
+
+
+
+	<script>
+
+		var json =
+		{
+			"mapMarker1": {
+				"cordX": "15.22",
+				"cordY": "53.28",
+				"icon": "map-marker.svg",
+				"modal": {
+					"title": "Unification of the Kingdom Day",
+					"content": "<p>Learn more</p>"
+				}
+			},
+			"mapMarker2": {
+				"cordX": "22.78",
+				"cordY": "49.76",
+				"icon": "map-marker.svg",
+				"modal": {
+					"title": "Milad Al-Nabi",
+					"content": "<p>Learn more</p>"
+				}
+			},
+			"mapMarker3": {
+				"cordX": "8.79",
+				"cordY": "34.00",
+				"icon": "map-marker.svg",
+				"modal": {
+					"title": "The Israel Festival",
+					"content": "<p>Learn more</p>"
+				}
+			},
+			"mapMarker4": {
+				"cordX": "8.60",
+				"cordY": "36.00",
+				"icon": "map-marker.svg",
+				"modal": {
+					"title": "Sukkot Festival",
+					"content": "<p>Learn more</p>"
+				}
+			},
+			"mapMarker5": {
+				"cordX": "24.76",
+				"cordY": "27.20",
+				"icon": "map-marker.svg",
+				"modal": {
+					"title": "Chahrshanbe Souri",
+					"content": "<p>Learn more</p>"
+				}
+			}
+		};
+
+		(function($) {
+
+			$(document).ready(function(){
+
+				createKBmap('KBtestmap', 'Map_Of_Asia_Cropped.jpg');
+
+				KBtestmap.importJSON(json);
+
+				KBtestmap.showAllMapMarkers();
+
+			});
+
+		})(jQuery);
+
+	</script>
+
+
+	<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 100px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	    mybutton.style.display = "block";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+
+
+</script>
+<!--
+<script>
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+if (window.pageYOffset > sticky) {
+	header.classList.add("sticky");
+} else {
+	header.classList.remove("sticky");
+}
+}
+
+</script>
+-->
+
+<div class="footer">
+	<p>Copyright blah blah</p>
+</div>
+	</body>
+</html>
